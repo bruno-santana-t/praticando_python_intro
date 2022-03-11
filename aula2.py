@@ -1,4 +1,4 @@
-a = int(input('Digite o primeor valor: '))
+a = int(input('Digite o primeiro valor: '))
 b = int(input('Digite o segundo valor: '))
 
 soma = a + b
@@ -9,11 +9,8 @@ resto = a % b
 
 # print(type(soma))
 
-# command + / para comentar várias linhas
 # print('Soma : ' + str(soma))
 # print('Divisão : ' + str(int(divisao)))
-
-# option + command + l para formatar
 
 # print('Soma: {}. Divisão: {}' .format(soma, divisao))
 resultado = ('Soma: {sum}'
