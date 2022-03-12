@@ -42,13 +42,13 @@ class Calculadora:
     def divisao(self):
         return self.valor_a / self.valor_b
 
+if __name__ == '__main__':
+    calculadora = Calculadora(5, 5)
+    print('O valor de a é: {valor_a}  \nO valor de b é: {valor_b}'.format(valor_a=calculadora.valor_a,
+                                                                          valor_b=calculadora.valor_b))
 
-calculadora = Calculadora(5, 5)
-print('O valor de a é: {valor_a}  \nO valor de b é: {valor_b}'.format(valor_a=calculadora.valor_a,
-                                                                      valor_b=calculadora.valor_b))
-
-# passando apenas uma única vez os valores, é possível chamar todas as funções
-print(calculadora.adicao())
-print(calculadora.subtracao())
-print(calculadora.multiplicacao())
-print(calculadora.divisao())
+    # passando apenas uma única vez os valores, é possível chamar todas as funções
+    print(calculadora.adicao())
+    print(calculadora.subtracao())
+    print(calculadora.multiplicacao())
+    print(calculadora.divisao())

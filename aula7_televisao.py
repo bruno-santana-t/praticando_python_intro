@@ -21,22 +21,26 @@ class Televisao:
             self.canal -= 1
 
 
-televisao = Televisao()
-print('A televisão está ligada? {}'.format(televisao.ligada))
+# coloca-se essa proteção para se fazer uso de módulos e testes
+# apenas chamando o próprio arquivo executa os testes abaixo
+if __name__ == '__main__':
+    print(__name__)
+    televisao = Televisao()
+    print('A televisão está ligada? {}'.format(televisao.ligada))
 
-televisao.power()
-print('A televisão agora está ligada? {}'.format(televisao.ligada))
+    televisao.power()
+    print('A televisão agora está ligada? {}'.format(televisao.ligada))
 
-televisao.power()
-print('A televisão agora está ligada? {}'.format(televisao.ligada))
+    televisao.power()
+    print('A televisão agora está ligada? {}'.format(televisao.ligada))
 
-print('A televisão está no canal: {}'.format(televisao.canal))
+    print('A televisão está no canal: {}'.format(televisao.canal))
 
-televisao.aumenta_canal()
-print('Agora a televisão está no canal: {}'.format(televisao.canal))
+    televisao.aumenta_canal()
+    print('Agora a televisão está no canal: {}'.format(televisao.canal))
 
-televisao.aumenta_canal()
-print('Agora a televisão está no canal: {}'.format(televisao.canal))
+    televisao.aumenta_canal()
+    print('Agora a televisão está no canal: {}'.format(televisao.canal))
 
-televisao.diminui_canal()
-print('Agora a televisão está no canal: {}'.format(televisao.canal))
+    televisao.diminui_canal()
+    print('Agora a televisão está no canal: {}'.format(televisao.canal))
